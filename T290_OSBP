@@ -1,0 +1,205 @@
+
+
+1. prk@ubuntu:~$ sudo apt install openssh-server
+[sudo] password for prk: 
+Reading package lists... Done
+Building dependency tree       
+Reading state information... Done
+The following additional packages will be installed:
+  ncurses-term openssh-client openssh-sftp-server ssh-import-id
+Suggested packages:
+  keychain libpam-ssh monkeysphere ssh-askpass molly-guard
+The following NEW packages will be installed:
+  ncurses-term openssh-server openssh-sftp-server ssh-import-id
+The following packages will be upgraded:
+  openssh-client
+1 upgraded, 4 newly installed, 0 to remove and 308 not upgraded.
+Need to get 1,359 kB of archives.
+After this operation, 6,010 kB of additional disk space will be used.
+Do you want to continue? [Y/n] 
+Get:1 http://us.archive.ubuntu.com/ubuntu focal-updates/main amd64 openssh-client amd64 1:8.2p1-4ubuntu0.4 [671 kB]
+Get:2 http://us.archive.ubuntu.com/ubuntu focal/main amd64 ncurses-term all 6.2-0ubuntu2 [249 kB]
+Get:3 http://us.archive.ubuntu.com/ubuntu focal-updates/main amd64 openssh-sftp-server amd64 1:8.2p1-4ubuntu0.4 [51.5 kB]
+Get:4 http://us.archive.ubuntu.com/ubuntu focal-updates/main amd64 openssh-server amd64 1:8.2p1-4ubuntu0.4 [377 kB]
+Get:5 http://us.archive.ubuntu.com/ubuntu focal/main amd64 ssh-import-id all 5.10-0ubuntu1 [10.0 kB]
+Fetched 1,359 kB in 7s (187 kB/s)                                             
+Preconfiguring packages ...
+(Reading database ... 185767 files and directories currently installed.)
+Preparing to unpack .../openssh-client_1%3a8.2p1-4ubuntu0.4_amd64.deb ...
+Unpacking openssh-client (1:8.2p1-4ubuntu0.4) over (1:8.2p1-4ubuntu0.2) ...
+Selecting previously unselected package ncurses-term.
+Preparing to unpack .../ncurses-term_6.2-0ubuntu2_all.deb ...
+Unpacking ncurses-term (6.2-0ubuntu2) ...
+Selecting previously unselected package openssh-sftp-server.
+Preparing to unpack .../openssh-sftp-server_1%3a8.2p1-4ubuntu0.4_amd64.deb ...
+Unpacking openssh-sftp-server (1:8.2p1-4ubuntu0.4) ...
+Selecting previously unselected package openssh-server.
+Preparing to unpack .../openssh-server_1%3a8.2p1-4ubuntu0.4_amd64.deb ...
+Unpacking openssh-server (1:8.2p1-4ubuntu0.4) ...
+Selecting previously unselected package ssh-import-id.
+Preparing to unpack .../ssh-import-id_5.10-0ubuntu1_all.deb ...
+Unpacking ssh-import-id (5.10-0ubuntu1) ...
+Setting up openssh-client (1:8.2p1-4ubuntu0.4) ...
+Setting up ssh-import-id (5.10-0ubuntu1) ...
+Attempting to convert /etc/ssh/ssh_import_id
+Setting up ncurses-term (6.2-0ubuntu2) ...
+Setting up openssh-sftp-server (1:8.2p1-4ubuntu0.4) ...
+Setting up openssh-server (1:8.2p1-4ubuntu0.4) ...
+
+Creating config file /etc/ssh/sshd_config with new version
+Creating SSH2 RSA key; this may take some time ...
+3072 SHA256:wnK+F8rIvDEMTB/bRg/7t04Zpk8txdBypznm7cRwGTY root@ubuntu (RSA)
+Creating SSH2 ECDSA key; this may take some time ...
+256 SHA256:8xH/LO7+GbZJLsGVRGJk/fLBJsO+UCkwv5b2Mc1yNnk root@ubuntu (ECDSA)
+Creating SSH2 ED25519 key; this may take some time ...
+256 SHA256:YmvRdqDy8bP0sQK3l2TnGU2Ctos6o2UE8Kxj6GYDrlM root@ubuntu (ED25519)
+Created symlink /etc/systemd/system/sshd.service → /lib/systemd/system/ssh.serv
+ice.
+Created symlink /etc/systemd/system/multi-user.target.wants/ssh.service → /lib/
+systemd/system/ssh.service.
+rescue-ssh.target is a disabled or a static unit, not starting it.
+Processing triggers for systemd (245.4-4ubuntu3.15) ...
+Processing triggers for man-db (2.9.1-1) ...
+Processing triggers for ufw (0.36-6) ...
+prk@ubuntu:~$ sudo systemctl status ssh
+● ssh.service - OpenBSD Secure Shell server
+     Loaded: loaded (/lib/systemd/system/ssh.service; enabled; vendor preset: >
+     Active: active (running) since Sat 2022-01-22 00:20:11 PST; 1min 12s ago
+       Docs: man:sshd(8)
+             man:sshd_config(5)
+   Main PID: 5232 (sshd)
+      Tasks: 1 (limit: 2255)
+     Memory: 1.1M
+     CGroup: /system.slice/ssh.service
+             └─5232 sshd: /usr/sbin/sshd -D [listener] 0 of 10-100 startups
+
+Jan 22 00:20:10 ubuntu systemd[1]: Starting OpenBSD Secure Shell server...
+Jan 22 00:20:11 ubuntu sshd[5232]: Server listening on 0.0.0.0 port 22.
+Jan 22 00:20:11 ubuntu sshd[5232]: Server listening on :: port 22.
+Jan 22 00:20:11 ubuntu systemd[1]: Started OpenBSD Secure Shell server.
+...skipping...
+● ssh.service - OpenBSD Secure Shell server
+     Loaded: loaded (/lib/systemd/system/ssh.service; enabled; vendor preset: >
+     Active: active (running) since Sat 2022-01-22 00:20:11 PST; 1min 12s ago
+       Docs: man:sshd(8)
+             man:sshd_config(5)
+   Main PID: 5232 (sshd)
+      Tasks: 1 (limit: 2255)
+     Memory: 1.1M
+     CGroup: /system.slice/ssh.service
+             └─5232 sshd: /usr/sbin/sshd -D [listener] 0 of 10-100 startups
+
+Jan 22 00:20:10 ubuntu systemd[1]: Starting OpenBSD Secure Shell server...
+Jan 22 00:20:11 ubuntu sshd[5232]: Server listening on 0.0.0.0 port 22.
+Jan 22 00:20:11 ubuntu sshd[5232]: Server listening on :: port 22.
+Jan 22 00:20:11 ubuntu systemd[1]: Started OpenBSD Secure Shell server.
+~
+~
+~
+~
+~
+~
+~
+~
+lines 1-15/15 (END)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+● ssh.service - OpenBSD Secure Shell server
+     Loaded: loaded (/lib/systemd/system/ssh.service; enabled; vendor preset: e>
+     Active: active (running) since Sat 2022-01-22 00:20:11 PST; 1min 12s ago
+       Docs: man:sshd(8)
+             man:sshd_config(5)
+   Main PID: 5232 (sshd)
+      Tasks: 1 (limit: 2255)
+     Memory: 1.1M
+     CGroup: /system.slice/ssh.service
+             └─5232 sshd: /usr/sbin/sshd -D [listener] 0 of 10-100 startups
+
+Jan 22 00:20:10 ubuntu systemd[1]: Starting OpenBSD Secure Shell server...
+Jan 22 00:20:11 ubuntu sshd[5232]: Server listening on 0.0.0.0 port 22.
+Jan 22 00:20:11 ubuntu sshd[5232]: Server listening on :: port 22.
+Jan 22 00:20:11 ubuntu systemd[1]: Started OpenBSD Secure Shell server.
+~
+~
+~
+~
+~
+~
+~
+~
+lines 1-15/15 (END)
+
+2. 
+prk@ubuntu:~$ ip a
+1: lo: <LOOPBACK,UP,LOWER_UP> mtu 65536 qdisc noqueue state UNKNOWN group default qlen 1000
+    link/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00
+    inet 127.0.0.1/8 scope host lo
+       valid_lft forever preferred_lft forever
+    inet6 ::1/128 scope host 
+       valid_lft forever preferred_lft forever
+2: ens33: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc fq_codel state UP group default qlen 1000
+    link/ether 00:0c:29:0e:2c:21 brd ff:ff:ff:ff:ff:ff
+    altname enp2s1
+    inet 192.168.179.128/24 brd 192.168.179.255 scope global dynamic noprefixroute ens33
+       valid_lft 1144sec preferred_lft 1144sec
+    inet6 fe80::ec6:f2be:5b61:a8c9/64 scope link noprefixroute 
+       valid_lft forever preferred_lft forever
+prk@ubuntu:~$ sudo ufw allow ssh
+[sudo] password for prk: 
+Rules updated
+Rules updated (v6)
+prk@ubuntu:~$ ssh prk@192.168.179.128/24
+ssh: Could not resolve hostname 192.168.179.128/24: Name or service not known
+prk@ubuntu:~$ ssh prk@192.168.179.128
+The authenticity of host '192.168.179.128 (192.168.179.128)' can't be established.
+ECDSA key fingerprint is SHA256:8xH/LO7+GbZJLsGVRGJk/fLBJsO+UCkwv5b2Mc1yNnk.
+Are you sure you want to continue connecting (yes/no/[fingerprint])? yes
+Warning: Permanently added '192.168.179.128' (ECDSA) to the list of known hosts.
+prk@192.168.179.128's password: 
+Permission denied, please try again.
+prk@192.168.179.128's password: 
+Welcome to Ubuntu 20.04 LTS (GNU/Linux 5.13.0-27-generic x86_64)
+
+ * Documentation:  https://help.ubuntu.com
+ * Management:     https://landscape.canonical.com
+ * Support:        https://ubuntu.com/advantage
+
+
+318 updates can be installed immediately.
+0 of these updates are security updates.
+To see these additional updates run: apt list --upgradable
+
+Your Hardware Enablement Stack (HWE) is supported until April 2025.
+
+The programs included with the Ubuntu system are free software;
+the exact distribution terms for each program are described in the
+individual files in /usr/share/doc/*/copyright.
+
+Ubuntu comes with ABSOLUTELY NO WARRANTY, to the extent permitted by
+applicable law.
+
+prk@ubuntu:~$ 
+
+3. 
