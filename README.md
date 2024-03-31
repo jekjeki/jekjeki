@@ -2,7 +2,7 @@
 - 👀 I’m interested in programming and still learn
 - 🌱 I’m currently learning C, java, Go, React, Python
 - 💞️ I’m looking to collaborate on study, and project
-- 📫 you can contact me, because im open
+- 📫 you can contact in my email: yusufzaki013@gmail.com
 - i'm software teaching assistant at Software Laboratory Center Binus University
 
 ![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=jekjeki&langs_count=8)
