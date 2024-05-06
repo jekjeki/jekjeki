@@ -5,6 +5,8 @@
 - 📫 you can contact in my email: yusufzaki013@gmail.com
 - i'm software teaching assistant at Software Laboratory Center Binus University
 
+I have some private repo about fullstack project that i have made, feel free contact me later.
+
 ![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=jekjeki&langs_count=8)
 
 <!---
