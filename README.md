@@ -10,6 +10,7 @@ I have some private repo about fullstack project that i have made, feel free con
 ![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=jekjeki&langs_count=8)
 
 There are stacks that mastered 
+
 ![Firebase](https://img.shields.io/badge/firebase-a08021?style=for-the-badge&logo=firebase&logoColor=ffcd34)
 ![MariaDB](https://img.shields.io/badge/MariaDB-003545?style=for-the-badge&logo=mariadb&logoColor=white)
 ![MicrosoftSQLServer](https://img.shields.io/badge/Microsoft%20SQL%20Server-CC2927?style=for-the-badge&logo=microsoft%20sql%20server&logoColor=white)
