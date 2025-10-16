@@ -46,7 +46,11 @@ Frameworks
 ![TailwindCSS](https://img.shields.io/badge/tailwindcss-%2338B2AC.svg?style=for-the-badge&logo=tailwind-css&logoColor=white)
 
 
+###
+
 <img src="https://raw.githubusercontent.com/jekjeki/jekjeki/output/snake.svg" alt="Snake animation" />
+
+###
 
 
 <!---
