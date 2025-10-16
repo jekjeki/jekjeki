@@ -46,6 +46,9 @@ Frameworks
 ![TailwindCSS](https://img.shields.io/badge/tailwindcss-%2338B2AC.svg?style=for-the-badge&logo=tailwind-css&logoColor=white)
 
 
+<img src="https://raw.githubusercontent.com/jekjeki/jekjeki/output/snake.svg" alt="Snake animation" />
+
+
 <!---
 jekjeki/jekjeki is a ✨ special ✨ repository because its `README.md` (this file) appears on your GitHub profile.
 You can click the Preview link to take a look at your changes.
