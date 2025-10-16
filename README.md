@@ -46,11 +46,11 @@ Frameworks
 ![TailwindCSS](https://img.shields.io/badge/tailwindcss-%2338B2AC.svg?style=for-the-badge&logo=tailwind-css&logoColor=white)
 
 
-###
-
-<img src="https://raw.githubusercontent.com/jekjeki/jekjeki/output/snake.svg" alt="Snake animation" />
-
-###
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/jekjeki/jekjeki/output/pacman-contribution-graph-dark.svg">
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/jekjeki/jekjeki/output/pacman-contribution-graph.svg">
+  <img alt="pacman contribution graph" src="https://raw.githubusercontent.com/jekjeki/jekjeki/output/pacman-contribution-graph.svg">
+</picture>
 
 
 <!---
