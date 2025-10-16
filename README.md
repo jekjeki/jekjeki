@@ -3,7 +3,7 @@
 - 🌱 I’m currently learning C, java, Go, React, Python
 - 💞️ I’m looking to collaborate on study, and project
 - 📫 you can contact in my email: yusufzaki013@gmail.com
-- i'm software teaching assistant at Software Laboratory Center Binus University
+- i'm Lecture Specialist S1 in Bina Nusantara University
 
 I have some private repo about fullstack project that i have made, feel free contact me later.
 
